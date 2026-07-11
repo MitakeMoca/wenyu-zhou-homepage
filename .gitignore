@@ -1,4 +1,5 @@
 .DS_Store
 Thumbs.db
 preview*.png
+current-*.png
 chrome-debug-profile/

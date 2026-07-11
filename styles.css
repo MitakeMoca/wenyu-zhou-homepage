@@ -283,6 +283,10 @@ time,
   color: var(--muted);
 }
 
+.project-list {
+  min-width: 0;
+}
+
 .project {
   display: grid;
   grid-template-columns: 170px minmax(0, 1fr);

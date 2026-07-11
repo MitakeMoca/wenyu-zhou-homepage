@@ -45,9 +45,9 @@
             segmentation.
           </p>
           <p>
-            I am also interested in region-aware multimodal pre-training and system-level agents
-            for intelligent operations and maintenance. My current projects connect model
-            efficiency, fine-grained visual understanding, and reliable AI systems.
+            I am also interested in system-level agents for intelligent operations and
+            maintenance. My current projects connect model efficiency, video understanding, and
+            reliable AI systems.
           </p>
 
           <div class="quick-facts" aria-label="Academic facts">
@@ -84,13 +84,6 @@
               Starops was selected as a National Champion project in the 2025 Challenge Cup.
             </span>
           </li>
-          <li>
-            <time>2025</time>
-            <span>
-              Began work on JARA, a region-aware image-text pre-training framework based on visual
-              context reconstruction.
-            </span>
-          </li>
         </ul>
       </section>
 
@@ -102,13 +95,6 @@
             <p>
               Mixed-precision post-training quantization, layer sensitivity analysis, and memory
               compression for SAM2-style video segmentation models.
-            </p>
-          </article>
-          <article>
-            <h3>Multimodal Pre-training</h3>
-            <p>
-              Region-aware visual-language alignment, reconstruction objectives, and fine-grained
-              cross-region semantic modeling.
             </p>
           </article>
           <article>
@@ -124,60 +110,47 @@
       <section id="projects" class="section">
         <h2>Selected Projects</h2>
 
-        <article class="project">
-          <div class="project-meta">
-            <time>Oct 2025 - Jul 2026</time>
-            <span>First Author · Oral Presentation</span>
-          </div>
-          <div class="project-text">
-            <h3>Layer Sensitivity Matters: Mixed-Precision PTQ for SAM2 Video Segmentation</h3>
-            <p>
-              Designed GLS-MPQ, a layer-sensitivity-guided mixed-precision post-training
-              quantization method. Starting from a fully low-bit model, GLS-MPQ greedily restores
-              sensitive layers to full precision under an average bit-width budget, prioritizing
-              layers with the largest marginal improvement on PVS metrics.
-            </p>
-            <p>
-              I integrated the quantization interface into the SAM2 video predictor, built
-              evaluation pipelines on DAVIS-2017 and SA-V, implemented mixed-precision search, and
-              conducted ablations for M-KVM.
-            </p>
-          </div>
-        </article>
+        <div class="project-list">
+          <article class="project">
+            <div class="project-meta">
+              <time>Oct 2025 - Jul 2026</time>
+              <span>First Author · Oral Presentation</span>
+            </div>
+            <div class="project-text">
+              <h3>Layer Sensitivity Matters: Mixed-Precision PTQ for SAM2 Video Segmentation</h3>
+              <p>
+                Designed GLS-MPQ, a layer-sensitivity-guided mixed-precision post-training
+                quantization method. Starting from a fully low-bit model, GLS-MPQ greedily
+                restores sensitive layers to full precision under an average bit-width budget,
+                prioritizing layers with the largest marginal improvement on PVS metrics.
+              </p>
+              <p>
+                I integrated the quantization interface into the SAM2 video predictor, built
+                evaluation pipelines on DAVIS-2017 and SA-V, implemented mixed-precision search,
+                and conducted ablations for M-KVM.
+              </p>
+            </div>
+          </article>
 
-        <article class="project">
-          <div class="project-meta">
-            <time>May 2025 - Oct 2025</time>
-            <span>National Champion · Challenge Cup</span>
-          </div>
-          <div class="project-text">
-            <h3>Starops: System-Level Agent for Intelligent Operations and Maintenance</h3>
-            <p>
-              Developed a system-level agent on the Kylin operating system for monitoring,
-              anomaly detection, dependency analysis, automatic optimization, and system-level
-              question answering.
-            </p>
-            <p>
-              The log anomaly module uses BERT for semantic encoding, LLaMA as a decoder, and a
-              projector for aligning encoder and decoder semantic spaces.
-            </p>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-meta">
-            <time>May 2025 - May 2026</time>
-            <span>National Innovation Training Program</span>
-          </div>
-          <div class="project-text">
-            <h3>JARA: Joint Alignment and Reconstruction for Region-Aware Pre-training</h3>
-            <p>
-              Built a visual-context-reconstruction based image-text pre-training framework with
-              ViT and BERT. I mainly designed Spatially Balanced Masking, which dynamically adjusts
-              the mask sampling distribution to strengthen cross-region semantic modeling.
-            </p>
-          </div>
-        </article>
+          <article class="project">
+            <div class="project-meta">
+              <time>May 2025 - Oct 2025</time>
+              <span>National Champion · Challenge Cup Project</span>
+            </div>
+            <div class="project-text">
+              <h3>StarOps: System-Level Agent for Intelligent Operations and Maintenance</h3>
+              <p>
+                Developed a system-level project on the Kylin operating system for monitoring,
+                anomaly detection, dependency analysis, automatic optimization, and system-level
+                question answering.
+              </p>
+              <p>
+                The log anomaly module uses BERT for semantic encoding, LLaMA as a decoder, and a
+                projector for aligning encoder and decoder semantic spaces.
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section id="awards" class="section">
