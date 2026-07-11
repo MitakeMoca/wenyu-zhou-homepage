@@ -5,173 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Academic homepage of Wenyu Zhou, an Artificial Intelligence undergraduate at Beihang University working on efficient multimodal and video intelligence."
+      content="Academic homepage of Wenyu Zhou, an Artificial Intelligence undergraduate at Beihang University."
     />
-    <title>Wenyu Zhou | Academic Homepage</title>
+    <title>Wenyu Zhou</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Wenyu Zhou homepage">Wenyu Zhou</a>
+    <header class="topbar">
+      <a class="site-name" href="#top">Wenyu Zhou</a>
       <nav class="nav" aria-label="Primary navigation">
+        <a href="#news">News</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
-        <a href="#honors">Honors</a>
-        <a href="#contact">Contact</a>
+        <a href="#awards">Awards</a>
+        <a href="#teaching">Teaching</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Artificial Intelligence · Beihang University</p>
-          <h1>Efficient multimodal and video intelligence.</h1>
-          <p class="lead">
-            I am an undergraduate researcher in Artificial Intelligence at Beihang University,
-            interested in post-training quantization, video segmentation, multimodal pre-training,
-            and system-level intelligent agents.
+    <main id="top" class="page">
+      <section class="intro">
+        <aside class="profile">
+          <img class="portrait" src="assets/profile.jpg" alt="Portrait of Wenyu Zhou" />
+          <h1>Wenyu Zhou</h1>
+          <p class="role">B.Eng. Student in Artificial Intelligence</p>
+          <p class="affiliation">Beihang University</p>
+          <div class="links">
+            <a href="mailto:wayaairon@gmail.com">Email</a>
+            <a href="https://github.com/MitakeMoca/wenyu-zhou-homepage">Homepage Source</a>
+          </div>
+        </aside>
+
+        <div class="bio">
+          <p class="eyebrow">About</p>
+          <h2>Efficient video and multimodal intelligence.</h2>
+          <p>
+            I am an undergraduate student majoring in Artificial Intelligence at Beihang
+            University. My recent work focuses on efficient video foundation models, especially
+            layer-sensitivity-guided mixed-precision post-training quantization for SAM2 video
+            segmentation.
           </p>
-          <div class="hero-actions" aria-label="Profile links">
-            <a class="button primary" href="mailto:wayaairon@gmail.com">Email</a>
-            <a class="button secondary" href="#projects">View Work</a>
+          <p>
+            I am also interested in region-aware multimodal pre-training and system-level agents
+            for intelligent operations and maintenance. My current projects connect model
+            efficiency, fine-grained visual understanding, and reliable AI systems.
+          </p>
+
+          <div class="quick-facts" aria-label="Academic facts">
+            <div>
+              <strong>92.49 / 100</strong>
+              <span>Major average score</span>
+            </div>
+            <div>
+              <strong>5 / 29</strong>
+              <span>Major rank</span>
+            </div>
+            <div>
+              <strong>CET-6 552</strong>
+              <span>English proficiency</span>
+            </div>
           </div>
         </div>
-        <figure class="hero-visual" aria-label="Abstract research graph visual">
-          <img src="assets/research-graph.png" alt="Abstract visualization of connected research topics" />
-        </figure>
       </section>
 
-      <section class="profile-grid" aria-label="Academic profile highlights">
-        <article class="metric">
-          <span class="metric-value">92.49</span>
-          <span class="metric-label">Major average score</span>
-        </article>
-        <article class="metric">
-          <span class="metric-value">5 / 29</span>
-          <span class="metric-label">Major rank</span>
-        </article>
-        <article class="metric">
-          <span class="metric-value">IJCAI 2026</span>
-          <span class="metric-label">GLOW Workshop oral presentation</span>
-        </article>
+      <section id="news" class="section">
+        <h2>News</h2>
+        <ul class="timeline">
+          <li>
+            <time>2026</time>
+            <span>
+              Our paper <em>Layer Sensitivity Matters: Mixed-Precision Post-Training Quantization
+              for SAM2 Video Segmentation</em> was accepted as an oral presentation at the IJCAI
+              2026 GLOW Workshop.
+            </span>
+          </li>
+          <li>
+            <time>2025</time>
+            <span>
+              Starops was selected as a National Champion project in the 2025 Challenge Cup.
+            </span>
+          </li>
+          <li>
+            <time>2025</time>
+            <span>
+              Began work on JARA, a region-aware image-text pre-training framework based on visual
+              context reconstruction.
+            </span>
+          </li>
+        </ul>
       </section>
 
-      <section id="research" class="section two-column">
-        <div>
-          <p class="section-kicker">Research Focus</p>
-          <h2>Building efficient models without giving up fine-grained understanding.</h2>
-        </div>
-        <div class="text-stack">
-          <p>
-            My current work studies layer-sensitivity-guided mixed-precision post-training
-            quantization for SAM2 video segmentation. The work identifies uneven quantization
-            sensitivity across memory-related and mask-decoding modules, then restores the most
-            sensitive layers under an average bit-width budget.
-          </p>
-          <p>
-            I also work on multimodal pre-training for region-aware semantic understanding and
-            system-level agents for intelligent operations and maintenance.
-          </p>
+      <section id="research" class="section">
+        <h2>Research Interests</h2>
+        <div class="interest-grid">
+          <article>
+            <h3>Efficient Video Segmentation</h3>
+            <p>
+              Mixed-precision post-training quantization, layer sensitivity analysis, and memory
+              compression for SAM2-style video segmentation models.
+            </p>
+          </article>
+          <article>
+            <h3>Multimodal Pre-training</h3>
+            <p>
+              Region-aware visual-language alignment, reconstruction objectives, and fine-grained
+              cross-region semantic modeling.
+            </p>
+          </article>
+          <article>
+            <h3>System-Level AI Agents</h3>
+            <p>
+              Intelligent diagnosis, log anomaly detection, automatic optimization, and operating
+              system question answering.
+            </p>
+          </article>
         </div>
       </section>
 
       <section id="projects" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Selected Work</p>
-          <h2>Projects</h2>
-        </div>
-        <div class="project-list">
-          <article class="project">
-            <div class="project-date">Oct 2025 - Jul 2026</div>
-            <div class="project-body">
-              <h3>Layer Sensitivity Matters: Mixed-Precision PTQ for SAM2 Video Segmentation</h3>
-              <p class="project-meta">First author · IJCAI 2026 GLOW Workshop · Oral Presentation</p>
-              <p>
-                Designed GLS-MPQ, a layer-sensitivity-guided mixed-precision post-training
-                quantization method for SAM2. The project includes quantization integration,
-                DAVIS-2017 and SA-V evaluation pipelines, layer sensitivity analysis, mixed-
-                precision search, M-KVM ablations, and comparisons with AdaRound, QDrop,
-                PTQ4SAM, and QMini-SAM2.
-              </p>
-            </div>
-          </article>
+        <h2>Selected Projects</h2>
 
-          <article class="project">
-            <div class="project-date">May 2025 - Oct 2025</div>
-            <div class="project-body">
-              <h3>Starops: System-Level Agent for Intelligent Operations and Maintenance</h3>
-              <p class="project-meta">National Champion · 2025 Challenge Cup</p>
-              <p>
-                Built an intelligent O&M agent on the Kylin operating system for monitoring,
-                anomaly detection, dependency analysis, automatic optimization, and system-level
-                question answering. The log anomaly detection module combines BERT semantic
-                encoding, a LLaMA decoder, and a projector for semantic-space alignment.
-              </p>
-            </div>
-          </article>
+        <article class="project">
+          <div class="project-meta">
+            <time>Oct 2025 - Jul 2026</time>
+            <span>First Author · Oral Presentation</span>
+          </div>
+          <div class="project-text">
+            <h3>Layer Sensitivity Matters: Mixed-Precision PTQ for SAM2 Video Segmentation</h3>
+            <p>
+              Designed GLS-MPQ, a layer-sensitivity-guided mixed-precision post-training
+              quantization method. Starting from a fully low-bit model, GLS-MPQ greedily restores
+              sensitive layers to full precision under an average bit-width budget, prioritizing
+              layers with the largest marginal improvement on PVS metrics.
+            </p>
+            <p>
+              I integrated the quantization interface into the SAM2 video predictor, built
+              evaluation pipelines on DAVIS-2017 and SA-V, implemented mixed-precision search, and
+              conducted ablations for M-KVM.
+            </p>
+          </div>
+        </article>
 
-          <article class="project">
-            <div class="project-date">May 2025 - May 2026</div>
-            <div class="project-body">
-              <h3>JARA: Joint Alignment and Reconstruction for Region-Aware Pre-training</h3>
-              <p class="project-meta">National College Student Innovation and Entrepreneurship Training Program</p>
-              <p>
-                Proposed a visual-context-reconstruction based image-text pre-training framework
-                with ViT and BERT. I mainly designed Spatially Balanced Masking, a strategy that
-                dynamically adjusts mask sampling to improve cross-region semantic modeling, with
-                validation on COCO, Flickr30K, and ADE20K.
-              </p>
-            </div>
-          </article>
-        </div>
+        <article class="project">
+          <div class="project-meta">
+            <time>May 2025 - Oct 2025</time>
+            <span>National Champion · Challenge Cup</span>
+          </div>
+          <div class="project-text">
+            <h3>Starops: System-Level Agent for Intelligent Operations and Maintenance</h3>
+            <p>
+              Developed a system-level agent on the Kylin operating system for monitoring,
+              anomaly detection, dependency analysis, automatic optimization, and system-level
+              question answering.
+            </p>
+            <p>
+              The log anomaly module uses BERT for semantic encoding, LLaMA as a decoder, and a
+              projector for aligning encoder and decoder semantic spaces.
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-meta">
+            <time>May 2025 - May 2026</time>
+            <span>National Innovation Training Program</span>
+          </div>
+          <div class="project-text">
+            <h3>JARA: Joint Alignment and Reconstruction for Region-Aware Pre-training</h3>
+            <p>
+              Built a visual-context-reconstruction based image-text pre-training framework with
+              ViT and BERT. I mainly designed Spatially Balanced Masking, which dynamically adjusts
+              the mask sampling distribution to strengthen cross-region semantic modeling.
+            </p>
+          </div>
+        </article>
       </section>
 
-      <section id="honors" class="section two-column">
-        <div>
-          <p class="section-kicker">Recognition</p>
-          <h2>Honors and awards</h2>
-        </div>
-        <ul class="honor-list">
+      <section id="awards" class="section">
+        <h2>Honors and Awards</h2>
+        <ul class="award-list">
           <li>IJCAI 2026 GLOW Workshop, first author and oral presentation.</li>
           <li>National Inspirational Scholarship, 2024-2025.</li>
           <li>First Prize, 16th National College Student Mathematics Competition.</li>
           <li>Honorable Mention, 2026 Mathematical Contest in Modeling.</li>
           <li>Beijing First Prize, 2025 China Undergraduate Mathematical Contest in Modeling.</li>
           <li>Academic Excellence Scholarship and First Prize Discipline Competition Scholarship, 2024-2025.</li>
-          <li>Teaching assistant for Advanced Algebra for Engineering, Fundamentals of Physics, Mathematical Statistics, Data Structures, and Signals and Systems.</li>
+          <li>Song Qingling Future Talent Scholarship, 2023-2024.</li>
         </ul>
       </section>
 
-      <section class="section education">
-        <div class="section-heading">
-          <p class="section-kicker">Education</p>
-          <h2>Beihang University</h2>
-        </div>
-        <div class="education-row">
-          <div>
-            <h3>B.Eng. in Artificial Intelligence</h3>
-            <p>Sep 2023 - Present</p>
-          </div>
-          <p>
-            Selected coursework: Mathematical Statistics, Linear Algebra, Probability Theory,
-            Computer Graphics, Signals and Systems, Edge Intelligence and Control, Mathematical
-            Analysis, and Machine Learning.
-          </p>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact">
-        <div>
-          <p class="section-kicker">Contact</p>
-          <h2>Open to research conversations and collaboration.</h2>
-        </div>
-        <a class="contact-link" href="mailto:wayaairon@gmail.com">wayaairon@gmail.com</a>
+      <section id="teaching" class="section">
+        <h2>Teaching</h2>
+        <p class="teaching-text">
+          Teaching assistant for Advanced Algebra for Engineering, Fundamentals of Physics,
+          Mathematical Statistics, Data Structures, and Signals and Systems.
+        </p>
       </section>
     </main>
 
     <footer class="footer">
       <span>© 2026 Wenyu Zhou</span>
-      <span>Academic homepage built for GitHub Pages.</span>
+      <span>Last updated July 2026</span>
     </footer>
   </body>
 </html>
